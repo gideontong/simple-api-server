@@ -17,4 +17,4 @@ def route_api():
     return '{"challenge":"35902439"}'
 
 if __name__ == '__main__':
-    app.run(port=80)
+    app.run(port=5000)
