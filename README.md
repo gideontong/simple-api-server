@@ -1,18 +1,10 @@
 # simple-api-server
 
-A simple API server in Python to respond to challenge requests. Essentially boilerplate, but it will respond to
+A simple API server in Python to respond to challenge requests. Essentially boilerplate, but it will respond to JSON requests with
 
 ```json
 {
-    "challenge": "data"
-}
-```
-
-with `1` appended to the end like so:
-
-```json
-{
-    "challenge": "data1"
+    "challenge": "35902439"
 }
 ```
 

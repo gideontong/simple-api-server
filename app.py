@@ -14,6 +14,7 @@ def route_api():
         data = loads(request.data)
     except:
         print("Didn't get a JSON input!")
+        return '{"error":"invalid input"}'
     return '{"challenge":"35902439"}'
 
 if __name__ == '__main__':
