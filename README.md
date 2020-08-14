@@ -1,6 +1,20 @@
 # simple-api-server
 
-A simple API server in Python to respond to challenge requests. Essentially boilerplate, but it will respond to JSON requests with
+A simple, boilerplate API server in Python using the Flask framework to respond to challenge requests.
+
+## Default Endpoints
+
+> `/`
+
+Sending any kind of request to this endpoint will result in a text ouput:
+
+```md
+Hello, world!
+```
+
+> `/api`
+
+`POST`ing to this endpoint any kind of JSON payload will return:
 
 ```json
 {
@@ -8,7 +22,13 @@ A simple API server in Python to respond to challenge requests. Essentially boil
 }
 ```
 
-and respond to everything else with the fields replaced with `data`.
+If you send this endpoint anything other than a JSON payload or a `POST` request, it will return:
+
+```json
+{
+    "error": "invalid input"
+}
+```
 
 ## Usage
 
@@ -20,4 +40,4 @@ python app.py
 
 ## License
 
-Created by Gideon Tong under the MIT License.
+Created by Gideon Tong under the [MIT License](LICENSE.md).
